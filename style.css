@@ -30,7 +30,10 @@ nav h3{
     justify-content: flex-start;
     align-items: center;
 }
-nav .navigasi{
+nav h3 .fa-bars{
+    display: none;
+}
+.navigasi{
     display: flex;
     width: 40%;
     justify-content: flex-end;
@@ -146,13 +149,23 @@ nav .navigasi li:hover{
     }
     nav h3{
         width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
-    nav .navigasi{
+    nav h3 .fa-bars{
+        display: block;
+        cursor: pointer;
+    }
+    .navigasi{
         flex-direction: column;
         line-height: 4;
         width: 100%;
         z-index: 1;
         background-color: lightgray;
+        display: none;
+    }
+    .active{
+        display: block;
     }
     nav .navigasi li{
         width: 100%;
@@ -163,7 +176,7 @@ nav .navigasi li:hover{
         justify-content: space-around;
     }
     .img{
-        height: 40%;
+        height: 50%;
         width: 70%;
     }
     .caption{
