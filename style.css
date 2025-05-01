@@ -52,7 +52,7 @@ nav .navigasi li:hover{
 .img{
     width: 30%;
     height: 70%;
-    background: darkslategray;
+    background: white;
     border-top-left-radius: 100%;
     border: 5px solid rgb(58, 58, 58);
 }
@@ -70,6 +70,10 @@ nav .navigasi li:hover{
 .caption h3{
     line-height: 1.5;
     color: darkslategray;
+    position: relative;
+    padding: 10px 0;
+    border-top: 4px solid  rgb(14, 22, 22);
+    border-bottom: 4px solid  rgb(14, 22, 22);
 }
 .caption .button{
     width: 100%;
@@ -86,8 +90,7 @@ nav .navigasi li:hover{
     width: 100%;
     height: 95vh;
 }
-#template{
-    width: 100%;
+.home{
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -143,6 +146,47 @@ nav .navigasi li:hover{
     }
 }
 
+/* slider */
+.slider-container, #template {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider, .kontener-home {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide, .home {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+article{
+    padding: 0 50px;
+}
+.panah{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 0 10px;
+}
+.panah i{
+    background-color: darkslategray;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 @media screen and (max-width:600px){
     nav{
         flex-direction: column;
@@ -171,20 +215,27 @@ nav .navigasi li:hover{
         width: 100%;
         color: darkslategray;
     }
-    #template{
+    .home{
         flex-direction: column;
         justify-content: space-around;
     }
     .img{
-        height: 50%;
-        width: 70%;
+        height: 40%;
+        width: 50%;
     }
     .caption{
         text-align: center;
-        height: 40%;
-        width: 100%;
+        height: 60%;
+        width: 90%;
+        padding: 5px;
     }
     .caption .button button{
         margin: auto;
+    }
+    .caption h3{
+        padding: 10px 0px;
+    }
+    article{
+        padding: 10px 40px;
     }
 }

@@ -24,51 +24,117 @@
         
         <div class="konten">
             <div id="template">
-                <div class="img">
-                    <img src="gmb/aguspemuda.png" alt="" width="100%" height="100%">
-                </div>
-                <div class="caption">
-                    <h1 class="animated-text">hello i'm <span></span></h1>
-                    <h3>Hai sobat, saya adalah akuntan profesional dengan keahlian di fullstack development, menggabungkan bisnis dan teknologi.</h3>
-                    <div class="button">
-                        <button>Hubungi saya</button>
-                        <button>Form order</button>
+                <div class="kontener-home" id="slideHome">
+                    <div class="home" id="home">
+                        <div class="img">
+                            <img src="gmb/aguspemuda.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="caption">
+                            <h1 class="animated-text">hello i'm <span></span></h1>
+                            <h3>
+                                <article>
+                                    Hai sobat, saya adalah akuntan profesional dengan keahlian di fullstack development, menggabungkan bisnis dan teknologi.
+                                </article>
+                            </h3>
+                            <div class="button">
+                                <button>Hubungi saya</button>
+                                <button>Form order</button>
+                            </div>
+                        </div>
                     </div>
+                    <div class="home" id="home">
+                        <div class="img">
+                            <img src="gmb/jurnalis.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="caption">
+                            <h1 class="animated-text">hello i'm <span></span></h1>
+                            <h3>
+                                <article>
+                                    Hai sobat, saya adalah akuntan profesional dengan keahlian di fullstack development, menggabungkan bisnis dan teknologi.
+                                </article>
+                            </h3>
+                            <div class="button">
+                                <button>Hubungi saya</button>
+                                <button>Form order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home" id="home">
+                        <div class="img">
+                            <img src="gmb/development.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="caption">
+                            <h1 class="animated-text">hello i'm <span></span></h1>
+                            <h3>
+                                <article>
+                                    Hai sobat, saya adalah akuntan profesional dengan keahlian di fullstack development, menggabungkan bisnis dan teknologi.
+                                </article>
+                            </h3>
+                            <div class="button">
+                                <button>Hubungi saya</button>
+                                <button>Form order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home" id="home">
+                        <div class="img">
+                            <img src="gmb/finance.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="caption">
+                            <h1 class="animated-text">hello i'm <span></span></h1>
+                            <h3>
+                                <article>
+                                    Hai sobat, saya adalah akuntan profesional dengan keahlian di fullstack development, menggabungkan bisnis dan teknologi.
+                                </article>
+                            </h3>
+                            <div class="button">
+                                <button>Hubungi saya</button>
+                                <button>Form order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panah">
+                    <i class="fas fa-arrow-left" onclick="prevHome()"></i>
+                    <i class="fas fa-arrow-right" onclick="nextHome()"></i>
                 </div>
             </div>
             <div id="paragrafHome">
-                <div class="img">
-                    <img src="gmb/aguspemuda.png" alt="" width="100%" height="100%">
-                </div>
-                <div class="caption">
-                    <h1 class="animated-text">hello i'm <span></span></h1>
-                    <h3>Moh Agus Rifai adalah akuntan profesional dengan keahlian di fullstack development, menggabungkan bisnis dan teknologi.</h3>
-                    <div class="button">
-                        <button><a href="wa.me/089516589293">Hubungi saya</a></button>
-                        <button>Form order</button>
+                <div class="home">
+                    <div class="img">
+                        <img src="gmb/aguspemuda.png" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="caption">
+                        <h1 class="animated-text">hello i'm <span></span></h1>
+                        <h3>
+                            Hai sobat, saya adalah akuntan profesional dengan keahlian di fullstack development, menggabungkan bisnis dan teknologi.
+                        </h3>
+                        <div class="button">
+                            <button>Hubungi saya</button>
+                            <button>Form order</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="paragrafSkill">
                 <div class="skill">
-                    <h2>My Skills</h2>
+                    <h2 onclick="skill()">My Skills</h2>
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
+                        <li class="li">HTML</li>
                     </ul>
                 </div>
             </div>
             <div id="paragrafBlog">
-                <div class="blogs">
-                    <h2>My Blogs</h2>
-                    <ul>
-                        <li>Effort prestasi timnas indonesia</li>
-                        <li>Prinsip bahagia abadi</li>
-                        <li>Pemrograman otak teknologi</li>
-                        <li>Rencana kunjungan dor to dor oleh yayasan al-ishlah</li>
-                    </ul>
+                <div class="slider-container">
+                    <div class="slider" id="slider">
+                        <div class="slide" style="background-color: red;">Slide 1</div>
+                        <div class="slide" style="background-color: blue;">Slide 2</div>
+                        <div class="slide" style="background-color: green;">Slide 3</div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button onclick="prevSlide()">Previous</button>
+                    <button onclick="nextSlide()">Next</button>
                 </div>
             </div>
             <div id="paragrafAbout">
